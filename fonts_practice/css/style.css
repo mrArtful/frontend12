@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 8px;
+}
+body {
+    
+    font-size: 30px;
+}
+
+
+.lorem-container {
+    background-color: burlywood;
+    
+    min-height: 100px;
+    max-height: 400px;
+    height: 400px;
+    width: 45rem;
+}
+
+.lorem-container > p {
+    /* width: 50%;
+    height: 50%;
+    overflow: scroll; */
+    background-color: #fff;
+    font-size: 2rem;
+}
+
+.colored {
+    background-color: salmon;
+    width: 100vw;
+    height: 100vh;
+}
+
+.minmax {
+    width: 100vmin;
+    height: 100vmax;
+    background-color: slateblue;
+}

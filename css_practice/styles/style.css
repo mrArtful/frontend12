@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: cadetblue;
+}
+
+/* #title {
+    color: green;
+} */
+
+h1.heading {
+    color: yellow;
+    background-color: brown;
+}
+
+.heading {
+    color: blue;
+}   
+
+h1 {
+    color: red;
+}
+
+h1, h2, .heading, #title, h2.heading {
+    font-size: 5em;
+}
+
+/* DESCENDATS */
+.container p {
+    background-color: burlywood;
+}
+
+/* NEAREST CHILD */
+.container > p {
+    color: red;
+}
+
+/* NEXT SIBLING */
+div + p {
+    font-size: 2em;
+}
+
+/* ALL NEXT SIBLINGS */
+div ~ p {
+    text-align: right;
+}
+
+a:link {
+    color: lime;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: yellow;
+}
+
+input:focus {
+    outline:1px solid yellow;
+}
+
+/* p:nth-child(even) {
+    font-size: 8em;
+} */
+
+.menu {
+    min-height: 100px;
+    background-color: aliceblue;
+}
+
+.menu p {
+    display: none;
+}
+
+.menu:hover p {
+    display: block;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .namebadge {
+            width: 250px;
+            height: 70px;
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        /* .namebadge h2 {
+            color: red;
+        } */
+
+        .boss {
+            background-color: goldenrod;
+            color: white;
+        }
+        #unique {
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="namebadge boss">
+        <h2>Jack Smith</h2>
+        <p>Company director</p>
+    </div>
+    <div class="namebadge" id="unique">
+        <h2>Sarah Gold</h2>
+        <p>Accountant</p>
+    </div>
+    <div class="namebadge">
+        <h2>Bob Simon</h2>
+        <p>Welder</p>
+    </div> -->
+    <form method="get" novalidate>
+        <fieldset>
+            <legend>Personal data</legend>
+            <label for="user-name">User name</label>
+            <input type="text" id="user-name" name="user-name" placeholder="User name" list="default-names" readonly value="ASdasdasd"><br>
+            <label for="password">Password</label>
+            <input type="password" maxlength="5" autofocus id="password" name="password" placeholder="Password"><br>
+        </fieldset>
+        <div>
+            HTML <input type="radio" name="prog-lang" value="html" checked>
+            CSS <input type="radio" name="prog-lang" value="css">
+            JavaScript <input type="radio" name="prog-lang" value="js">
+        </div>
+        Newsletter <input type="checkbox" name="news" value="true" required><br>
+        <select name="cars" multiple size="4">
+            <optgroup label="German Cars">
+                <option value="bmw">BMW</option>
+                <option value="mb">Mercedes-Benz</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+            <optgroup label="Japan Cars">
+                <option value="subaru">Subaru</option>
+                <option value="honda">Honda</option>
+                <option value="lexus">Lexus</option>
+            </optgroup>
+        </select><br>
+        <textarea name="message" cols="10" rows="10" style="resize: none;"></textarea><br>
+        <datalist id="default-names">
+            <option value="Roman">Roman</option>
+            <option value="Jack">Jack</option>
+            <option value="Bob">Bob</option>
+        </datalist>
+        <input type="submit" value="Click me!"><br>
+
+        <input type="button" value="HELLO" onclick="alert('HELLO')"><br>
+        <input type="color" name="color" id=""><br>
+        <input type="date" name="date" min="2024-07-31" max="2024-08-12"><br>
+        <input type="datetime-local" name="datetime-local" id=""><br>
+        <input type="email" name="email" id=""><br>
+        <input type="file" name="" id=""><br>
+        <input type="hidden" name="limit" value="20"><br>
+        <input type="number" step="0.2"><br>
+        <input type="range" name="range" min="1" max="5"><br>
+        <input type="tel" pattern="\d{3}" name="" id=""><br>
+    </form>
+</body>
+</html>
